@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import TypeCard from "../components/TypeCard";
 
 function Homepage() {
   const [properties, setProperties] = useState([
@@ -37,9 +38,11 @@ function Homepage() {
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Property Types</h2>
+          {properties.map((item) => (
+            <TypeCard />
+          ))}
         </section>
       </main>
-      {console.log(properties)}
       <Footer />
     </div>
   );

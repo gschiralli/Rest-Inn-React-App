@@ -35,7 +35,7 @@ const Header = () => {
                     active ? " bg-gray-100" : ""
                   } block px-5 py-3 whitespace-no-wrap`}
                 >
-                  Sign
+                  Sign Up
                 </Link>
               )}
             </Menu.Item>
