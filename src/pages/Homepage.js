@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 function Homepage() {
   return (
     <div>
-      {" "}
       <Header />
       <main>
         <Hero />
