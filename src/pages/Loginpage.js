@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-const Login = () => {
+const Loginpage = () => {
   return (
     <>
       <Header />
@@ -10,4 +10,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Loginpage;
