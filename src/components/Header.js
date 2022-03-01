@@ -26,7 +26,7 @@ const Header = () => {
             <MenuIcon className="h-6" />
             <UserCircleIcon className="h-6" />
           </Menu.Button>
-          <Menu.Items className="z-30 absolute right-10 bg-white border shadow rounded-md mt-2">
+          <Menu.Items className=" w-1/6 z-30 absolute right-10 bg-white border shadow rounded-md mt-2 w-50">
             <Menu.Item>
               {({ active }) => (
                 <Link
@@ -35,7 +35,7 @@ const Header = () => {
                     active ? " bg-gray-100" : ""
                   } block px-5 py-3 whitespace-no-wrap`}
                 >
-                  Sign Up
+                  Sign
                 </Link>
               )}
             </Menu.Item>
