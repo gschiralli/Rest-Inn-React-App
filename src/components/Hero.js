@@ -12,30 +12,32 @@ import "swiper/css/autoplay";
 
 const Hero = () => {
   return (
-    <Swiper
-      // install Swiper modules
-      className="h-[80vh]"
-      modules={[Navigation, Pagination, A11y, Autoplay]}
-      slidesPerView={1}
-      navigation
-      autoplay={true}
-      pagination={{ clickable: true }}
-    >
-      <SwiperSlide>
-        <img
-          className="relative object-cover h-full w-full"
-          src={img1}
-          alt=""
-        />{" "}
-      </SwiperSlide>
-      <SwiperSlide>
-        <img className=" object-cover h-full w-full" src={img2} alt="" />{" "}
-      </SwiperSlide>
-      <SwiperSlide>
-        {" "}
-        <img className=" object-cover h-full w-full" src={img3} alt="" />{" "}
-      </SwiperSlide>
-    </Swiper>
+    <>
+      <Swiper
+        // install Swiper modules
+        className="h-[80vh]"
+        modules={[Navigation, Pagination, A11y, Autoplay]}
+        slidesPerView={1}
+        navigation
+        autoplay={true}
+        pagination={{ clickable: true }}
+      >
+        <SwiperSlide>
+          <img
+            className="relative object-cover h-full w-full"
+            src={img1}
+            alt=""
+          />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className=" object-cover h-full w-full" src={img2} alt="" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img className=" object-cover h-full w-full" src={img3} alt="" />{" "}
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 };
 

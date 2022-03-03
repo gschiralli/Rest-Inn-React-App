@@ -20,7 +20,9 @@ const Header = () => {
       </div>
 
       <div className="flex items-center space-x-4 justify-end text-gray-600">
-        <p className=" hidden md:inline-flex text-black">Vacation Properties</p>
+        <p className=" hidden md:inline-flex text-black font-semibold cursor-pointer">
+          <Link to="/">Vacation Properties</Link>
+        </p>
         <Menu as="div">
           <Menu.Button className="flex items-center border-2 rounded-full p-2 space-x-2 transition duration-150 ease-in-out">
             <MenuIcon className="h-6" />
