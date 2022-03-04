@@ -21,14 +21,14 @@ const Header = () => {
 
       <div className="flex items-center space-x-4 justify-end text-gray-600">
         <p className=" hidden md:inline-flex text-black font-semibold cursor-pointer">
-          <Link to="/">Vacation Properties</Link>
+          <Link to="/properties">Vacation Properties</Link>
         </p>
         <Menu as="div">
           <Menu.Button className="flex items-center border-2 rounded-full p-2 space-x-2 transition duration-150 ease-in-out">
             <MenuIcon className="h-6" />
             <UserCircleIcon className="h-6" />
           </Menu.Button>
-          <Menu.Items className=" w-1/6 z-30 absolute right-10 bg-white border shadow rounded-md mt-2 w-50">
+          <Menu.Items className=" md:w-1/6 w-50 z-30 absolute right-10 bg-white border shadow rounded-md mt-2 ">
             <Menu.Item>
               {({ active }) => (
                 <Link

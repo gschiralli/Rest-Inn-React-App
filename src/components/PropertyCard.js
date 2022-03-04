@@ -1,11 +1,11 @@
 const PropertyCard = ({ img, title, price }) => {
   return (
-    <div>
-      <div className="relative h-80 w-80 cursor-pointer">
-        {console.log(img)}
-        <img src={img} alt={title} className="object-cover w-full h-full" />
+    <div className="cursor-pointer hover:scale-105 transform transition duration-300 ease-out mb-4 rounded overflow-hidden shadow-md">
+      <img src={img} alt={title} className="w-full h-32 sm:h-48 object-cover" />
+      <div className="m-4">
+        <span className="font-bold">{title}</span>
+        <span className="block text-gray-500 text-sm">${price} / night</span>
       </div>
-      <h3 className="text-3xl mt-3">{title}</h3>
     </div>
   );
 };
