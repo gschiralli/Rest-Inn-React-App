@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-
-import Footer from "../components/Footer";
+import { useParams } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ListingCard from "../components/ListingCard";
 
-const Listingpage = () => {
+const Typepage = () => {
   const [properties, setProperties] = useState([
     {
       _id: 0,
@@ -19,8 +19,10 @@ const Listingpage = () => {
       photoURL: "",
     },
   ]);
+  const { type } = useParams();
+
   useEffect(() => {
-    const URL = "https://intense-spire-46577.herokuapp.com/properties";
+    const URL = `https://intense-spire-46577.herokuapp.com/properties?type=${type}`;
 
     fetch(URL)
       .then((response) => response.json())
@@ -29,13 +31,14 @@ const Listingpage = () => {
         setProperties(json.data);
       })
       .catch((err) => console.log(err));
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <div>
       <Header />
       <main className="px-10 pt-7">
-        <h1 className="text-3xl font-semibold mt-2 mb-6">Listings</h1>
+        <h1 className="text-3xl font-semibold mt-2 mb-6">{type} Listings</h1>
         <section className="flex flex-col">
           {properties.map((property) => (
             <ListingCard
@@ -56,4 +59,4 @@ const Listingpage = () => {
   );
 };
 
-export default Listingpage;
+export default Typepage;

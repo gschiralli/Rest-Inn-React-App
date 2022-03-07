@@ -38,6 +38,7 @@ const BestSellerList = () => {
           img={item.photoURL}
           title={item.title}
           price={item.rentalPrice}
+          id={item._id}
         />
       ))}
     </div>
