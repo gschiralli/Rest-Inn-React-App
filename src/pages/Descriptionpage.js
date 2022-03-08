@@ -35,26 +35,7 @@ const Descriptionpage = () => {
   return (
     <>
       <Header />
-      <main>
-        <div className="flex flex-col-reverse md:block">
-          <div className="px-2 sm:px-10 py-6">
-            <h1 className="font-bold text-3xl">{property.title}</h1>
-            <ul className="flex">
-              <li className=" text-gray-400 underline">{property.location}</li>
-              <li className="text-gray-400 px-1">&bull;</li>
-              <li className=" text-gray-400">{property.type}</li>
-            </ul>
-          </div>
-
-          <div className="relative h-72 w-full md:w-2/5 md:px-10 ">
-            <img
-              src={property.photoURL}
-              alt={property.title}
-              className=" object-cover w-full h-full md:rounded-sm"
-            />
-          </div>
-        </div>
-      </main>
+      <main>{property.title}</main>
       <Footer />
     </>
   );
