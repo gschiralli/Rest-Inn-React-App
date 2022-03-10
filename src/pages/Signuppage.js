@@ -7,7 +7,7 @@ const Signuppage = () => {
   return (
     <>
       <Header />
-      <main className="h-[65vh]">
+      <main>
         <RegistrationForm />
       </main>
       <Footer />

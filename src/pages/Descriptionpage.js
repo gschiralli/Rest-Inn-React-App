@@ -37,14 +37,14 @@ const Descriptionpage = () => {
       <Header />
       <main className="md:h-3/4 h-auto">
         <div className="flex flex-col md:flex-row md:px-2 md:py-6 md:h-80 h-full">
-          <div className="relative md:w-96 w-full flex-none">
+          <div className="relative md:w-96 w-full flex-none md:h-full h-80">
             <img
               src={property.photoURL}
               alt={property.title}
               className=" object-cover w-full h-full"
             />
           </div>
-          <div className="md:pl-6 pl-2 pt-2 md:pt-0 flex flex-col items-start flex-initial max-h-full md:overflow-auto">
+          <div className="md:pl-6 pl-2 pt-2 md:pt-0 flex flex-col items-start flex-initial max-h-full md:overflow-auto w-full">
             <h2 className="text-3xl sm:text-1xl font-extrabold">
               {property.title}
             </h2>
@@ -54,7 +54,7 @@ const Descriptionpage = () => {
             <div className="pt-2 space-y-2">
               <h2 className="text-md font-semibold">About this place</h2>
               <p className=" text-sm">{property.description}</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 pt-4 gap-x-10 gap-y-4 md:gap-y-0">
+              <div className="grid grid-cols-2 pt-4 gap-x-10 gap-y-4 md:gap-y-0">
                 <div>
                   <h2 className="text-md font-semibold">
                     What this place offers
@@ -77,6 +77,16 @@ const Descriptionpage = () => {
                   ))}
                 </div>
               </div>
+            </div>
+
+            <div className="flex items-center justify-between w-full mt-5">
+              <h2 className="font-semibold text-xl">
+                ${property.rentalPrice}/ Night
+              </h2>
+
+              <button className="bg-blue-500 rounded-3xl py-2 px-4 text-white font-semibold mr-2">
+                Book Now
+              </button>
             </div>
           </div>
         </div>

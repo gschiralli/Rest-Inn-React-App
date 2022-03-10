@@ -6,7 +6,7 @@ const Loginpage = () => {
   return (
     <>
       <Header />
-      <main className=" h-[65vh]">
+      <main className=" h-screen">
         <Login />
       </main>
       <Footer />
