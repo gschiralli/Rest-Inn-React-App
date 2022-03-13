@@ -4,7 +4,7 @@
 
 # Setup project locally
 
-Clone this repo and install all dependencies using 
+Clone this repo and install all dependencies by running: 
 ### `npm i`
 
 
