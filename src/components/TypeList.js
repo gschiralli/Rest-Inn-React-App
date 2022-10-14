@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const TypeList = () => {
   const [propertyTypes, setPropertyTypes] = useState([]);
   useEffect(() => {
-    const URL = "https://intense-spire-46577.herokuapp.com/properties/types";
+    const URL = "https://polar-plains-40024.herokuapp.com/properties/types";
     fetch(URL)
       .then((response) => response.json())
 

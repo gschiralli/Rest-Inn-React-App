@@ -20,7 +20,7 @@ const RegistrationForm = () => {
     e.preventDefault();
     const customer = { firstName, lastName, email, password };
     if (validate()) {
-      fetch("https://intense-spire-46577.herokuapp.com/customers", {
+      fetch("https://polar-plains-40024.herokuapp.com/customers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(customer),

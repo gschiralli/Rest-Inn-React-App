@@ -19,7 +19,7 @@ const BestSellerList = () => {
 
   useEffect(() => {
     const URL =
-      "https://intense-spire-46577.herokuapp.com/properties/best-sellers";
+      "https://polar-plains-40024.herokuapp.com/properties/best-sellers";
 
     fetch(URL)
       .then((response) => response.json())

@@ -21,7 +21,7 @@ const Descriptionpage = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const URL = `https://intense-spire-46577.herokuapp.com/properties/${id}`;
+    const URL = `https://polar-plains-40024.herokuapp.com/properties/${id}`;
 
     fetch(URL)
       .then((response) => response.json())
