@@ -19,7 +19,7 @@ const BestSellerList = () => {
 
   useEffect(() => {
     const URL =
-      "https://polar-plains-40024.herokuapp.com/properties/best-sellers";
+      "https://curious-bonnet-dog.cyclic.app/properties/best-sellers";
 
     fetch(URL)
       .then((response) => response.json())

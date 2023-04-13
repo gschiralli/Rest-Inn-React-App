@@ -20,7 +20,7 @@ const Listingpage = () => {
     },
   ]);
   useEffect(() => {
-    const URL = "https://polar-plains-40024.herokuapp.com/properties";
+    const URL = "https://curious-bonnet-dog.cyclic.app/properties";
 
     fetch(URL)
       .then((response) => response.json())

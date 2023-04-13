@@ -22,7 +22,7 @@ const Typepage = () => {
   const { type } = useParams();
 
   useEffect(() => {
-    const URL = `https://polar-plains-40024.herokuapp.com/properties?type=${type}`;
+    const URL = `https://curious-bonnet-dog.cyclic.app/properties?type=${type}`;
 
     fetch(URL)
       .then((response) => response.json())

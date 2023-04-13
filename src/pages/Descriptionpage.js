@@ -21,7 +21,7 @@ const Descriptionpage = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const URL = `https://polar-plains-40024.herokuapp.com/properties/${id}`;
+    const URL = `https://curious-bonnet-dog.cyclic.app/properties/${id}`;
 
     fetch(URL)
       .then((response) => response.json())
