@@ -33,7 +33,7 @@ const Descriptionpage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <div className="flex flex-col justify-between h-full">
       <Header />
       <main className="md:h-3/4 h-auto">
         <div className="flex flex-col md:flex-row md:px-2 md:py-6 md:h-80 h-full">
@@ -92,7 +92,7 @@ const Descriptionpage = () => {
         </div>
       </main>
       <Footer />
-    </>
+    <div/>
   );
 };
 
